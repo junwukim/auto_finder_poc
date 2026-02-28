@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shoe Deal Tracker (PoC)</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Shoe Deal Tracker <span class="muted">(PoC)</span></h1>
+    <p class="muted">
+      4시간마다 크롤링된 결과 중, 평소 대비 일정 % 이상 저렴하고 사이즈 재고가 있는 항목만 보여줍니다.
+    </p>
+
+    <!-- [AD SLOT] 상단 배너 자리 (나중에 AdSense 코드로 교체) -->
+    <div class="ad-slot" aria-label="ad-slot-top">
+      <div class="ad-slot__inner">광고 배너 자리 (PoC)</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <label>
+        브랜드
+        <select id="filterBrand">
+          <option value="">전체</option>
+        </select>
+      </label>
+
+      <label>
+        최소 할인율
+        <select id="filterMinDiscount">
+          <option value="0">전체</option>
+          <option value="10">10%+</option>
+          <option value="15">15%+</option>
+          <option value="20">20%+</option>
+          <option value="30">30%+</option>
+        </select>
+      </label>
+
+      <button id="btnRefresh" type="button">새로고침</button>
+    </section>
+
+    <section>
+      <div class="status">
+        <span id="statusText">로딩 중…</span>
+        <span class="muted" id="statusTime"></span>
+      </div>
+
+      <div class="table-wrap">
+        <table class="table" id="dealsTable" aria-label="deals table">
+          <thead>
+            <tr>
+              <th>브랜드</th>
+              <th>모델</th>
+              <th>판매처</th>
+              <th class="num">현재가</th>
+              <th class="num">할인율</th>
+              <th>사이즈</th>
+              <th>업데이트</th>
+            </tr>
+          </thead>
+          <tbody id="dealsBody">
+            <!-- rows injected -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="empty" id="emptyState" hidden>
+        현재 조건에 맞는 딜이 없습니다.
+      </div>
+    </section>
+
+    <!-- [AD SLOT] 리스트 중간/하단 광고 자리 -->
+    <div class="ad-slot" aria-label="ad-slot-mid">
+      <div class="ad-slot__inner">광고 자리 (PoC)</div>
+    </div>
+
+    <footer class="footer">
+      <p class="muted">
+        데이터는 PoC용 샘플 HTML에서 생성됩니다. 실제 사이트로 확장할 때는 <code>config/targets.json</code>을 수정하세요.
+      </p>
+      <p class="muted">
+        <a href="about.html">About</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="contact.html">Contact</a>
+      </p>
+    </footer>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

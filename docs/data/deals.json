@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-02-28T15:46:42Z",
+  "count": 1,
+  "deals": [
+    {
+      "id": "a-aa::SampleStore",
+      "product_id": "a-aa",
+      "brand": "A",
+      "model": "AA",
+      "seller": "SampleStore",
+      "url": "samples/store1.html",
+      "currency": "KRW",
+      "price": 150000,
+      "baseline_price": 200000,
+      "discount_rate": 0.25,
+      "discount_percent": 25.0,
+      "sizes_available": [
+        "260",
+        "265"
+      ],
+      "last_seen_at": "2026-02-28T15:46:42Z",
+      "rule": ">= 10% off"
+    }
+  ],
+  "notes": [
+    "PoC output. Replace config/targets.json with real product pages & selectors.",
+    "Respect each site's ToS/robots. Avoid aggressive crawling."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "offers": {
+    "SampleStore\nfile://docs/samples/store1.html": [
+      {
+        "price": 150000.0,
+        "sizes": [
+          "260",
+          "265"
+        ],
+        "fetched_at": "2026-02-28T15:18:09Z"
+      },
+      {
+        "price": 150000.0,
+        "sizes": [
+          "260",
+          "265"
+        ],
+        "fetched_at": "2026-02-28T15:46:42Z"
+      }
+    ],
+    "AnotherStore\nfile://docs/samples/store2.html": [
+      {
+        "price": 210000.0,
+        "sizes": [
+          "260",
+          "265"
+        ],
+        "fetched_at": "2026-02-28T15:18:09Z"
+      },
+      {
+        "price": 210000.0,
+        "sizes": [
+          "260",
+          "265"
+        ],
+        "fetched_at": "2026-02-28T15:46:42Z"
+      }
+    ]
+  }
+}

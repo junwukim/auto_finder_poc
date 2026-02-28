@@ -1,0 +1,78 @@
+/* Minimal, clean PoC styling */
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  line-height: 1.5;
+  background: #fafafa;
+  color: #111;
+}
+a { color: inherit; }
+code { background: #f0f0f0; padding: 0.1rem 0.25rem; border-radius: 4px; }
+
+.container { max-width: 1000px; margin: 0 auto; padding: 24px; }
+.muted { color: #666; }
+.footer { margin-top: 24px; padding-top: 16px; border-top: 1px solid #e6e6e6; }
+
+.controls {
+  display: flex; flex-wrap: wrap;
+  gap: 12px;
+  align-items: end;
+  margin: 16px 0 12px;
+}
+.controls label { display: grid; gap: 6px; font-size: 14px; }
+.controls select, .controls button {
+  padding: 8px 10px;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+  background: white;
+}
+.controls button { cursor: pointer; }
+
+.status { display: flex; gap: 10px; align-items: baseline; margin: 8px 0 12px; }
+
+.table-wrap { overflow-x: auto; background: white; border: 1px solid #e6e6e6; border-radius: 12px; }
+.table { width: 100%; border-collapse: collapse; min-width: 860px; }
+.table th, .table td { padding: 10px 12px; border-bottom: 1px solid #f0f0f0; font-size: 14px; vertical-align: top; }
+.table th { text-align: left; background: #fbfbfb; font-weight: 600; }
+.table td.num, .table th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.table tr:hover td { background: #fcfcff; }
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid #e6e6e6;
+  border-radius: 999px;
+  background: #f7f7f7;
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.ad-slot {
+  margin: 16px 0;
+  border: 1px dashed #cfcfcf;
+  border-radius: 12px;
+  background: #fff;
+}
+.ad-slot__inner {
+  padding: 18px;
+  text-align: center;
+  color: #888;
+  font-size: 13px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.empty {
+  margin: 14px 0;
+  padding: 14px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background: white;
+}

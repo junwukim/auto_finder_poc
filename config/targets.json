@@ -1,0 +1,39 @@
+{
+  "targets": [
+    {
+      "product_id": "a-aa",
+      "brand": "A",
+      "model": "AA",
+      "seller": "SampleStore",
+      "url": "file://docs/samples/store1.html",
+      "currency": "KRW",
+      "baseline_price": 200000,
+      "discount_threshold": 0.1,
+      "selectors": {
+        "price": ".price",
+        "sizes": ".sizes .size"
+      },
+      "display_url": "samples/store1.html"
+    },
+    {
+      "product_id": "a-aa",
+      "brand": "A",
+      "model": "AA",
+      "seller": "AnotherStore",
+      "url": "file://docs/samples/store2.html",
+      "currency": "KRW",
+      "baseline_price": 200000,
+      "discount_threshold": 0.1,
+      "selectors": {
+        "price": "#final-price",
+        "sizes": "#sizes .opt"
+      },
+      "display_url": "samples/store2.html"
+    }
+  ],
+  "rules": {
+    "max_history_points": 60,
+    "baseline_strategy": "config_or_median",
+    "median_last_n": 14
+  }
+}
